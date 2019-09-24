@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:GovernmentReceipt xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:rsm="urn:etda:unece:uncefact:data:standard:GovernmentReceipt:1" xmlns:ext="urn:etda:unece:uncefact:data:standard:supplementary_patient:1" xmlns:ram="urn:etda:unece:uncefact:data:standard:GovernmentReceipt_ReusableAggregateBusinessInformationEntity:1">
+    <rsm:ExchangedDocumentContext>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+            <ram:ID schemeAgencyName="ETDA" schemeVersionID="1.0">ERx-25xx</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:ExchangedDocumentContext>
+    <rsm:ExchangedDocument>
+        <ram:ID>RCT-001</ram:ID>
+        <ram:Name>ใบเสร็จรับเงิน</ram:Name>
+        <ram:TypeCode>T01</ram:TypeCode>
+        <ram:IssueDateTime>2019-09-23T00:00:00.000+07:00</ram:IssueDateTime>
+        <ram:CreationDateTime>2019-09-23T00:00:00.000+07:00</ram:CreationDateTime>
+    </rsm:ExchangedDocument>
+    <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>1</ram:LineID>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedTradeProduct>
+                <ram:ID>ex-001</ram:ID>
+                <ram:Name>ค่าใช้จ่ายประชุมคณะกรรมการการบริหาร สพธอ.</ram:Name>
+                <ram:Description>AD6200090 จิตรสินี ค่าใช้จ่ายประชุมคณะกรรมการการบริหาร สพธอ. ครั้งที่ 4/2562</ram:Description>
+            </ram:SpecifiedTradeProduct>
+            <ram:SpecifiedLineTradeAgreement>
+                <ram:GrossPriceProductTradePrice>
+                    <ram:ChargeAmount currencyCode="THB">2000</ram:ChargeAmount>
+                </ram:GrossPriceProductTradePrice>
+            </ram:SpecifiedLineTradeAgreement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:PayeeTradeParty>
+                <ram:ID>PayeeID-001</ram:ID>
+                <ram:Name>นายพรชัย อาจน้อย</ram:Name>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>10212</ram:PostcodeCode>
+                    <ram:CountryID>TH</ram:CountryID>
+                </ram:PostalTradeAddress>
+            </ram:PayeeTradeParty>
+            <ram:PayerTradeParty>
+                <ram:Name>นางสาวสมใจ ใจดี</ram:Name>
+            </ram:PayerTradeParty>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:GrandTotalAmount>2000</ram:GrandTotalAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+    <rsm:SupplementaryData>
+        <ram:PlaceAndName>rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeSettlement/ram:PayerTradeParty</ram:PlaceAndName>
+        <ram:Envelope>
+            <ext:Patient>
+                <ext:HN>HN-SRJ-20154687295</ext:HN>
+                <ext:DrugNumber>D-882565248956486</ext:DrugNumber>
+            </ext:Patient>
+        </ram:Envelope>
+    </rsm:SupplementaryData>
+</rsm:GovernmentReceipt>
